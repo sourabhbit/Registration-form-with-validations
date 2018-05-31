@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Acme');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Kenia');
+body{
+	
+	padding:0px;
+	margin:0px;
+}
+#particles-js{
+	top:0px;
+	position:absolute;
+	z-index:-1;
+	height:240%;
+	width:100%;
+	background:url('image.jpg');
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+	background-repeat: repeat;
+    background-position: center; 
+	background-size:cover;
+}
+
+h1,h2{
+	/**font-family: 'Acme', sans-serif;**/
+	font-family: 'Kenia', cursive;
+	text-transform:uppercase;
+	text-align:center;
+	font-size:30px;
+	color: steelblue;
+}
+table{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:85%;
+	
+}
+#table1{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:75%;
+	
+}
+tr {	
+	border:none;
+    height: 50px;
+}
+td {
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	border:none;
+	width:25%;
+    height:autopx;
+	color:white;
+	padding:5px;
+	
+}
+
+input[type="text"],input[type="password"],input[type="email"],textarea[name="address"]  {
+	 display:block;
+	 border: none;
+    border-bottom: 2px solid steelblue;
+     width: 90%;
+    padding: 10px;
+    color: black;
+    margin: 2px 0;
+    
+}
+input[type=text]:focus{
+    background-color: lightblue;
+	text-transform: uppercase;
+}
+input[type=text]{
+	text-transform: uppercase;
+}
+input[type=password]:focus{
+    background-color: lightblue;
+}
+input[type=email]:focus{
+    background-color: lightblue;
+}
+input[type=date]:focus{
+    background-color: lightblue;
+}
+textarea[name="address"]:focus{
+    background-color: lightblue;
+}
+
+input[type="radio"]{
+   cursor: pointer; 
+   width:20px;
+   height:10px;
+   padding: 10px;
+}
+input[type="checkbox"]{
+   cursor: pointer; 
+   width:20px;
+   height:20px;
+}
+
+input[type="date"],select[name="state"]{
+	display:block;
+   border: none;
+    border-bottom: 2px solid steelblue;
+     width: 90%;
+    padding: 10px;
+    color: black;
+    
+}
+select[name="sal"]{
+	text-align:center;
+	display:block;
+    border: none;
+    border-bottom: 2px solid steelblue;
+    width: 50%;
+    padding: 10px;
+    color: black;
+} 
+
+input[type=submit]{
+    border: 2px solid black;
+  background-color: #706fd3;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: white;
+  color: dodgerblue
+  margin-left: auto;
+    margin-right: auto;
+	font-family: 'Orbitron', sans-serif;
+}
+/**button[type=reset]{
+	 border: 2px solid black;
+  background-color: #ff5252;
+  color: black;
+margin-left: auto;
+    margin-right: auto;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: white;
+  font-family: 'Orbitron', sans-serif;
+} 
+input[type=submit]:hover{
+	 background: #2196F3;
+  color: white;
+}
+button[type=reset]:hover{
+	 background: #b33939;
+  color: white;
+}
+**/
+ul{
+	font-family: 'Orbitron', sans-serif;
+	list-style-type:disc; 
+	margin-left:10%;
+	color:white;
+}
+
+p{
+	font-family: 'Orbitron', sans-serif;
+	color:white;
+}
+
+
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button {
+  background: none;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 1.6em;
+  font-weight: bold;
+  padding: 0.5em 2em;
+  position: relative;
+  float:left;
+  text-transform: uppercase;
+}
+
+button::before,
+button::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #181818;
+}
+
+/* BUTTON 5 */
+.btn-5 {
+  overflow: hidden;
+}
+
+.btn-5::after {
+  /*background-color: #f00;*/
+  height: 100%;
+  left: -35%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+}
+
+.btn-5:hover:after {
+  height: 100%;
+  width: 135%;
+}
